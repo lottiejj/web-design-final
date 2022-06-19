@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Work Sans', sans-serif;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/leather-texture-blue.jpg);
+    background-position:center ;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo{
+    width: 150px;
+text-decoration: none;
+color: rgb(0, 0, 0);
+font-size: 35px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+}
+.nav-links a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 15px;
+    }
+
+    .nav-links ul li::after{
+     content:'';
+     width: 0%;
+     height: 2px;
+     background: #b9ffbb;
+     display: block;
+     margin:auto;
+     transition: 0.5s;
+        }
+        .nav-links ul li:hover::after{
+            width: 100%;
+        }
+
+        .text{
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+
+        .text h1{
+            font-size: 62px;
+        }
+        .text p {
+            margin: 10px 0 40px;
+            font-size: 15px;
+            color: #fff;
+        }
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 15px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            border: 1px solid #b9ffbb;
+            background-color: #b9ffbb;
+            transition: 1s;
+        }
+        /*----- design ------*/
+
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 10px;
+}
+
+#circle{
+    width: 1000px;
+    height:1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.control{
+    position: absolute;
+    right: 10%;
+    top:50%;
+    transform: translateY(-50%);
+}
+.control h3{
+   margin: 15px 0 ;
+   color: white;
+}
+#up {
+width: 15px;
+cursor: pointer;
+}
+#down {
+    width: 15px;
+    cursor: pointer;
+    }
+.item img{
+   width:70px;
+}
+.item {
+    position: absolute;
+    display: flex;
+    color: rgb(116, 152, 210);
+}
+.item div {
+    margin-left: 30px;
+}
+.item div p{
+    margin-top: 8px;
+}
+
+.material {
+    top: 250px;
+right: 50px;
+    z-index:-1;
+}
+.size{
+    top: 50px;
+    left:200px;
+    transform: rotate(-90deg);
+   
+}
+.width {
+    bottom: 250px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+.height {
+    bottom: 50px;
+    right: 200px;
+    transform: rotate(-270deg);
+}
+.content {
+    width: 20 rem;
+    height: 20rem;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+.container {
+    height: 100%;
+    width:100%;
+    position: relative;
+    overflow:hidden;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/leather-white.png);
+    background-position:center ;
+    background-size: cover;
+    position: relative;
+
+}
+.blue-sandal {
+    width: 900px;
+    position:absolute;
+    top: 50%;
+    left:35%;
+    transform: translateY(-50%);
+    z-index:1;
+}
+h3{
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.overlay {
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #fff;
+    border-left: 500px solid #fff;
+    position: absolute;
+    left: 0;
+    z-index:-1;
+    top: 0;
+}
+
+

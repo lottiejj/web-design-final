@@ -1,0 +1,86 @@
+<html>
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAVERS</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,700;1,300;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+</head>
+    <body>
+<div class="container">
+<nav>
+    <a class="logo"href="index.html">PAVERS</a>
+    <div class="nav-links">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">DESIGN 1</a></li>
+            <li><a href="">DESIGN 2</a></li>
+            <li><a href="">DESIGN 3</a></li>
+        </ul>
+    </div>
+</nav>
+    <div class="content">
+                <div class="overlay"></div>
+                   <img src="images/New Project.png" class="blue-sandal">
+                <div id="circle">
+                    <div class="item material">
+                        <img src="images/sample.png">
+                        <div>
+                            <h1>LINING</h1>
+                            <p>Leather</p>
+                        </div>
+                    </div>
+                    <div class="item size ">
+                        <img src="images/size.png">
+                        <div>
+                            <h1>SIZES</h1>
+                            <p>3 to 9</p>
+                        </div>
+                    </div>
+                    <div class="item width">
+                        <img src="images/width.png">
+                        <div>
+                            <h1>WIDTH</h1>
+                            <p>Wider</p>
+                        </div>
+                    </div>
+                    <div class="item height">
+                        <img src="images/high-heels.png">
+                        <div>
+                            <h1>HEEL<br> HEIGHT</h1>
+                            <p>2.5cm</p>
+                </div>
+                </div>
+        </div>
+            </div>
+            <div class="control">
+                <img src="images/up-arrow.png" id="up">
+                <h3>PRODUCT DETAILS</h3>
+                <img src="images/down-arrow.png" id="down">
+            </div>
+            <script>
+                var circle = document.getElementById("circle")
+                var up = document.getElementById("up")
+                var down = document.getElementById("down")
+                var rotate = circle.style.transform
+                var incrementRotate;
+                up.onclick = function() 
+                {
+                    incrementRotate = rotate + "rotate(-90deg)"
+                    circle.style.transform = incrementRotate;
+                    rotate = incrementRotate;
+                }
+                down.onclick = function() 
+                {
+                    incrementRotate = rotate + "rotate(90deg)"
+                    circle.style.transform = incrementRotate;
+                    rotate = incrementRotate;
+                }
+            </script>
+            </script>
+        </div>
+
+    </body>
+</html>
