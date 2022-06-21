@@ -122,13 +122,21 @@ p{
 .control{
     position: absolute;
     right: 10%;
+    margin-left: 3rem;
     top:50%;
     transform: translateY(-50%);
 }
 .control h3{
    margin: 15px 0 ;
    color: white;
+   
 }
+.control p{
+    margin: 15px 0 ;
+    color: white;
+    position: fixed;
+    width: 15rem;
+ }
 #up {
 width: 15px;
 cursor: pointer;
@@ -186,7 +194,7 @@ right: 50px;
     width:100%;
     position: relative;
     overflow:hidden;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/leather-white.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/leather-texture-blue.jpg);
     background-position:center ;
     background-size: cover;
     position: relative;
